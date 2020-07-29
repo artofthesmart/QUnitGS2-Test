@@ -21,16 +21,16 @@ const MAIN_TEST_TITLE_ = 'QUnitGS2 Test'
 
 const TESTS_ = [
   dev, // Small set of misc tests used in dev of library, with forced faliures 
-//  step, // async - wont complete
+//  step,    // async - wont complete
 //  timeout, // async - wont complete 
-//  assert, // async - wont complete
-//  async, // async - wont complete
+//  assert,  // async - wont complete
+//  async,   // async - wont complete
   deepEqual, // Takes a while to run
   dump,
 //  modules, // async - wont complete
 //  promise, // async - wont complete
-//  stack, // IEII that runs everytime, so commented out
-//  test, // async - wont complete
+//  stack,   // IEII that runs everytime, so commented out
+//  test,    // async - wont complete
   utilities,
 ]
 
@@ -54,9 +54,9 @@ var QUnit = QUnitGS2.QUnit
  * 
  *  - QUnitGS2.init() - Initialize the Apps Script wrapper of the main QUnit library
  *
- *  - QUnit.start() - Start the tests running
- *
  *  - TESTS_ - An array of test functions to run, that themselves include calls to QUnit tests
+ *
+ *  - QUnit.start() - Start the tests running
  *
  *  - QUnitGS2.getHtml() - Return the HTML version of the tests results to
  *                        the web app
@@ -85,5 +85,5 @@ function doGet() {
  */
 
 function getResultsFromServer() {
-  return QUnitGS2._getResultsFromServer()
+  return QUnitGS2.getResultsFromServer()
 }
