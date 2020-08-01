@@ -25,7 +25,7 @@ const TESTS_ = [
 //  timeout, // async - wont complete 
 //  assert,  // async - wont complete
 //  async,   // async - wont complete
-  deepEqual, // Takes a while to run
+ deepEqual, // Takes a while to run
   dump,
 //  modules, // async - wont complete
 //  promise, // async - wont complete
